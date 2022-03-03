@@ -18,11 +18,11 @@ yarn add vite-plugin-define-process-env -D
 ```ts
 // vite.config.ts
 import { defineConfig } from "vite";
-import vitePluginDefineProcessEnv from "vite-plugin-define-process-env";
+import defineProcessEnv from "vite-plugin-define-process-env";
 
 export default defineConfig({
   ...
-  plugins: [vitePluginDefineProcessEnv()]
+  plugins: [defineProcessEnv()]
 });
 ```
 

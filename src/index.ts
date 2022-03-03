@@ -8,7 +8,7 @@ interface Options {
   key: string;
 }
 
-export default function vitePluginDefineProcessEnv(
+export default function defineProcessEnv(
   option: Partial<Options> = { path: '', key: 'process.env' },
 ): Plugin {
   return {
