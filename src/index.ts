@@ -2,7 +2,6 @@ import * as path from 'path';
 import * as fs from 'fs';
 import { Plugin } from 'vite';
 import * as dotenv from 'dotenv';
-import { name } from '../package.json';
 
 interface Options {
   path: string;
@@ -13,7 +12,7 @@ export default function defineEnv(
   option: Partial<Options> = { path: '', key: 'process.env' },
 ): Plugin {
   return {
-    name,
+    name: 'vite-plugin-define-env',
     config(config, { command, mode }) {
       const filepath = path.resolve(process.cwd(), option.path as string);
       let files: string[] = [];

@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-define-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vite plugin for define env",
   "main": "dist/index.js",
   "scripts": {
