@@ -1,4 +1,4 @@
-# vite-plugin-define-process-env
+# vite-plugin-define-env
 
 ## 介绍
 
@@ -9,20 +9,20 @@ Vue-cli 项目迁移到 vite 时，需要将原有的环境变量前缀从 `VUE_
 ## 安装
 
 ```bash
-npm i vite-plugin-define-process-env -D
+npm i vite-plugin-define-env -D
 
-yarn add vite-plugin-define-process-env -D
+yarn add vite-plugin-define-env -D
 ```
 
 ## 使用
 ```ts
 // vite.config.ts
 import { defineConfig } from "vite";
-import defineProcessEnv from "vite-plugin-define-process-env";
+import defineEnv from "vite-plugin-define-env";
 
 export default defineConfig({
   ...
-  plugins: [defineProcessEnv()]
+  plugins: [defineEnv()]
 });
 ```
 
