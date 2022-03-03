@@ -14,7 +14,7 @@ export default function vitePluginDefineProcessEnv(
   return {
     name: 'vite-plugin-define-process-env',
     config(config, { command, mode }) {
-      const filepath = path.resolve(__dirname, option.path as string);
+      const filepath = path.resolve(process.cwd(), option.path as string);
       let files: string[] = [];
       if (fs.existsSync(filepath)) {
         files = fs.readdirSync(filepath);
