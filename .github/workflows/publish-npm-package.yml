@@ -4,8 +4,9 @@
 name: Release
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -19,4 +20,4 @@ jobs:
       - run: npm build
       - run: npm publish
         env:
-           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
